@@ -5,8 +5,8 @@
 #include "../inc/bst_utils.h"
 #include <string.h>
 #define null ((void*)0)
-COMPARE_NUM(int)
 
+COMPARE_NUM(int)
 COMPARE_NUM(float)
 
 PRINT_NUM(d, int)
