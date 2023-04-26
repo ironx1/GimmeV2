@@ -9,7 +9,7 @@ Write to a file: gimmev2 -w filename.txt arg1 arg2 arg3 -type <br />
 Read and Write: gimmev2 -r readfile.txt -w writefile.txt -type <br />
 
 # Type
-Use -int for integers,  <br />-flt for floating point numbers, <br /> -srt for strings.
+Use  <br />-int for integers,  <br />-flt for floating point numbers, <br /> -srt for strings.
 
 # Exlampes
 gimmev2 -p 10 3 44 1 9 122 11 10 33 0 -4 -int <br />
