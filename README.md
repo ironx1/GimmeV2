@@ -3,7 +3,7 @@ Sort words, numbers, letters.
 Gimme is a c application that sorts letters, words and numbers using binary search tree. The application takes data as arguments or reads it from a file. Gimme can write the arguments to a file or output directly to the screen.
 
 # Usage
-Print to screen: gimmev2 -p arg1 arg2 arg3 -type __
+Print to screen: gimmev2 -p arg1 arg2 arg3 -type <br />
 Write to a file: gimmev2 -w filename.txt arg1 arg2 arg3 -type
 Read and Write: gimmev2 -r readfile.txt -w writefile.txt -type
 
