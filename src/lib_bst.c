@@ -4,8 +4,10 @@
 
 #include "../inc/lib_bst.h"
 #include <stdlib.h>
+
 #define mem_alloc(type, size) (type*)calloc(size, sizeof(type));
 #define null NULL
+
 Node* newNode(void* data){
     Node* node = mem_alloc(Node, 1);
     if(node==null) return null;
@@ -13,17 +15,20 @@ Node* newNode(void* data){
     node->left = node->right = null;
     return node;
 }
+
 Tree* newBST(){
     Tree* bst = mem_alloc(Tree, 1);
     bst->root = null;
     return bst;
 }
+
 static Node* insert_node(Node* node, void* data, funCompare cmp){
     if(node == null) return newNode(data);
     if(cmp(data,node->data)>=0) node->right = insert_node(node->right, data, cmp);
     else node->left = insert_node(node->left, data, cmp);
     return node;
 }
+
 void insertNode(Tree* bst, void* data, funCompare cmp){
     if(bst == null) return;
     bst->root = insert_node(bst->root, data, cmp);
