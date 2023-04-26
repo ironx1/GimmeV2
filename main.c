@@ -6,7 +6,10 @@
 #include <string.h>
 
 int main(int argc, const char* argv[]){
-    if(argc<2) return 1;
+    if(argc<2){
+        printf("use -p to print\n-w to write\n-r to read");
+        return 1;
+    }
     Tree *bst = newBST();
     if(!strcmp(argv[1], "-p")){
         if(!strcmp(argv[argc-1], "-str")){
@@ -115,10 +118,10 @@ int main(int argc, const char* argv[]){
             fclose(rFile);
             fclose(wFile);
         }
-        else return 1;
+        else {
+            free(bst);
+            return 1;
+        }
     }
+    return 0;
 }
-
-/*
- * gimme -p  arg1 arg2 arg3 -str
- */
