@@ -16,6 +16,3 @@ set_target_properties(GimmeV2 PROPERTIES
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 add_executable(Gimme ./main.c)
 target_link_libraries(Gimme GimmeV2)
-
-#cmake -B build
-#cmake --build build
